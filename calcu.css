@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.813),
+    rgba(255, 255, 255, 0.174)
+  );
+  font-family: "Mooli", sans-serif;
+  font-family: "Orbitron", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+input {
+  padding: 70px 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(19, 19, 19);
+  border-radius: 15px 15px 0px 0px;
+  color: white;
+  font-size: 25px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 10px;
+}
+.oprator {
+  color: #ffa60090;
+  font-size: 30px;
+}
+button {
+  background-color: #131313;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 25px 0px;
+  outline: none;
+  border: none;
+  color: white;
+}
+.result {
+  border-radius: 0px 0px 15px 0px;
+}
+.bredius {
+  border-radius: 0px 0px 0px 15px;
+}
+.del,
+.AC {
+  font-size: 20px;
+}
+
+.darkMode {
+  float: right;
+  padding: 20px 30px;
+  margin-bottom: -70px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.lightOprator {
+  color: #00000090;
+  font-size: 40px;
+}
+.darkMode i {
+  color: white;
+}
+.darkTheme {
+  background-color: #131313;
+  color: white;
+}
+.whiteTheme {
+  background-color: white;
+  color: black;
+}
+.redColor {
+  color: red;
+}
+.darkMode i {
+  color: #ffa60090;
+}
+
+/* ############################## media query */
+
+@media (max-width: 400px) {
+  input {
+    padding: 30px 0px;
+    font-size: 25px;
+  }
+  button {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0px -20px;
+  }
+}
