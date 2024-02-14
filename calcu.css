@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(
-    360deg,
-    rgba(0, 0, 0, 0.813),
-    rgba(255, 255, 255, 0.174)
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
   );
   font-family: "Mooli", sans-serif;
   font-family: "Orbitron", sans-serif;
@@ -34,6 +34,9 @@ input {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   border-radius: 10px;
 }
+.calculator {
+  position: absolute;
+}
 .oprator {
   color: #ffa60090;
   font-size: 30px;
@@ -57,28 +60,9 @@ button {
 .AC {
   font-size: 20px;
 }
-
-.darkMode {
-  float: right;
-  padding: 20px 30px;
-  margin-bottom: -70px;
-  border-radius: 15px;
-  cursor: pointer;
-}
 .lightOprator {
   color: #00000090;
   font-size: 40px;
-}
-.darkMode i {
-  color: white;
-}
-.darkTheme {
-  background-color: #131313;
-  color: white;
-}
-.whiteTheme {
-  background-color: white;
-  color: black;
 }
 .redColor {
   color: red;

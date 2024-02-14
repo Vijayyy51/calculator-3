@@ -1,7 +1,7 @@
 let ans = "";
 let buttons = document.querySelectorAll(".button");
 let oprators = document.querySelectorAll(".oprator");
-let darkMode = document.querySelector(".darkMode");
+let theme = document.querySelector(".theme");
 let input = document.querySelector("input");
 
 Array.from(buttons).forEach((button) => {
@@ -21,15 +21,4 @@ Array.from(buttons).forEach((button) => {
       document.querySelector("input").value = ans;
     }
   });
-});
-darkMode.addEventListener("click", function () {
-  for (i = 0; i < buttons.length; i++) {
-    buttons[i].classList.toggle("whiteTheme");
-  }
-  input.classList.toggle("whiteTheme");
-  //   darkMode.classList.toggle("redColor");
-
-  for (i = 0; i < oprators.length; i++) {
-    oprators[i].classList.toggle("redColor");
-  }
 });
